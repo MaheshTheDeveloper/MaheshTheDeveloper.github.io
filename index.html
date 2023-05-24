@@ -24,15 +24,22 @@
     crossorigin="anonymous"></script>
   <script src="main.js"></script>
   <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 
 <body>
+  <noscript>Javascript is not working....</noscript>
   <!-- navbar -->
   <nav>
-    <h3 class="logo">
+    <h3 class="logo" onclick="scroolok()">
       Mahesh.dev
     </h3>
 
+    <script>
+      function scroolok() {
+        window.scrollTo(0, 0)
+      }
+    </script>
     <ul>
       <li>
         <a href="#home">Home</a>
@@ -50,35 +57,42 @@
         <a href="#contact">Contact</a>
       </li>
 
-      <li id="hamMenu">
+      <li onclick="hamburgerMenu()">
         <i class="fa-solid fa-bars-staggered mobile-menu"></i>
       </li>
     </ul>
   </nav>
 
-  <div class="mobile-nav">
-    <span id="hamMenu">
+  <div id="mobile-nav " class="">
+    <span onclick="hamburgerMenu()">
       <i class="fa-solid fa-xmark"></i>
     </span>
 
     <ul>
-      <li id="hamMenu">
+      <li onclick="hamburgerMenu()">
         <a href="#home">Home</a>
       </li>
 
-      <li id="hamMenu">
+      <li onclick="hamburgerMenu()">
         <a href="#about">About</a>
       </li>
 
-      <li id="hamMenu">
+      <li onclick="hamburgerMenu()">
         <a href="#projects">Projects</a>
       </li>
 
-      <li id="hamMenu">
+      <li onclick="hamburgerMenu()">
         <a href="#contact">Contact</a>
       </li>
     </ul>
   </div>
+  <script>
+    function hamburgerMenu() {
+      console.log("test cleared1")
+      document.getElementById("mobile-nav").classList.toggle("open-menu")
+      console.log("test cleared2")
+    }
+  </script>
 
   <!-- hero -->
   <section id="home" class="hero">
@@ -176,14 +190,23 @@
         <p>portfolio</p>
         <h3>Each project is a unique piece of development 🧩</h3>
         <div class="projects-grid">
-          <ProBox title="Car Rental" img={CarRental}
-            description="A car rental website is an online platform that allows users to rent cars for personal or business use. The website provides an interface for searching, comparing, and reserving cars."
-            techno1="React" techno2="SCSS" code="https://github.com/MaheshTheDeveloper/car-rental"
-            demo="https://car-rental-ten.vercel.app/" scrollY="-83%" icon="🚗" />
-
-
-
-
+          <div class="pro pro__1 undefined">
+            <div class="pro__img"><a target="_blank" href="https://car-rental-ten.vercel.app/" rel="noreferrer"><img
+                  src="media/car-rental-full.c58b37da333d73238fdd.webp" alt="website"
+                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
+            <div class="pro__text">
+              <h3 style="font-weight: bolder;">Car Rental 🚗</h3>
+              <p>A car rental website is an online platform that allows users to rent cars for personal or business use.
+                The website provides an interface for searching, comparing, and reserving cars.</p>
+              <div class="stack">
+                <p>React</p>
+                <p>SCSS</p>
+              </div>
+              <div class="links"><a target="_blank" href="https://github.com/stefvndev/car-rental" rel="noreferrer">Code
+                  <i class="fa-brands fa-github"></i></a><a target="_blank" href="https://car-rental-ten.vercel.app/"
+                  rel="noreferrer">Live Demo<i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a></div>
+            </div>
+          </div>
         </div>
       </div>
   </section>
