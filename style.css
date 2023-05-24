@@ -348,17 +348,17 @@ nav ul a:hover {
     background-image: url(/static/media/heropfp.7bb160c73e436178efd9.png);
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     border: 3px solid #2d2e32;
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     height: 35rem;
     position: relative;
     transition: all 1s ease-in-out;
-    width: 35rem
+    width: 35rem;
 }
 
 @media (max-width:500px) {
-    .hero-img {
+    .hero-img img{
         height: 28rem;
         width: 28rem
     }
