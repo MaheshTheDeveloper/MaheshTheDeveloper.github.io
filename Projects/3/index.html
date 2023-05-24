@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialy - Landing PAge</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        transition: 0.5s ease-in-out;
+    }
+
+    .hero {
+        width: 100%;
+        min-height: 100vh;
+        background: url(back-image.png);
+        background-position: center;
+        background-size: cover;
+        padding: 10px 10%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    nav {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 400;
+    }
+
+    .login-btn {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: 400;
+    }
+
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 14px 40px;
+        color: #fff;
+        background: linear-gradient(45deg, #df4881, #c430d7);
+        font-size: 14px;
+        border-radius: 30px;
+        border-top-right-radius: 0;
+    }
+
+    .content {
+        margin-top: 10%;
+        max-width: 600px;
+
+    }
+
+    .content h1 {
+
+        font-size: 70px;
+        color: #222;
+
+    }
+
+    .btn.btn:hover {
+        border-top-right-radius: 30px;
+    }
+
+    .content p {
+        margin: 10px 0 30px;
+        color: #333;
+
+    }
+
+    .content .btn {
+        padding: 15px 80px;
+        font-size: 15px;
+    }
+
+    .fea-img {
+        width: 530px;
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+    }
+</style>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="logo.png" class="logo" alt="">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+            <div>
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="btn">Download App</a>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>Make<br>New Friends.</h1>
+            <p>
+            <p>Socially is a new social media platform to make new friends
+                online in the world. Now let's explore all it's amazing trial features.</p>
+            <a href="#" class="btn">Join Now</a>
+        </div>
+        <img src="pic.png" class="fea-img" alt="">
+    </div>
+
+</body>
+
+</html>
