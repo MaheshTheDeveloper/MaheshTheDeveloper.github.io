@@ -102,6 +102,17 @@
         bottom: 0;
         right: 10%;
     }
+    .anim{
+        opacity: 0;
+        transform: translateY(30px);
+        animation: moveup 0.5s linear forwards;
+    }
+    @keyframes moveup {
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
 </style>
 
 <body>
@@ -119,13 +130,12 @@
             </div>
         </nav>
         <div class="content">
-            <h1>Make<br>New Friends.</h1>
-            <p>
-            <p>Socially is a new social media platform to make new friends
+            <h1 class="anim">Make<br>New Friends.</h1>
+            <p class="anim">Socially is a new social media platform to make new friends
                 online in the world. Now let's explore all it's amazing trial features.</p>
-            <a href="#" class="btn">Join Now</a>
+            <a href="#" class="btn anim">Join Now</a>
         </div>
-        <img src="pic.png" class="fea-img" alt="">
+        <img src="pic.png" class="fea-img anim" alt="">
     </div>
 
 </body>
