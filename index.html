@@ -53,40 +53,33 @@
         <a href="#contact">Contact</a>
       </li>
 
-      <li onclick="hamburgerMenu()">
-        <i class="fa-solid fa-bars-staggered mobile-menu"></i>
-      </li>
+      <li onclick="hamburgerMenu()"><i class="fa-solid fa-bars-staggered mobile-menu"></i></li>
     </ul>
   </nav>
 
-  <div class="mobile-nav">
-    <span onclick="hamburgerMenu()">
-      <i class="fa-solid fa-xmark"></i>
-    </span>
+  <div id="mobileNav" class="mobile-nav closed-menu">
+    <span onclick="hamburgerMenu()"><i class="fa-solid fa-xmark"></i></span>
 
     <ul>
-      <li onclick="hamburgerMenu()">
-        <a href="#home">Home</a>
-      </li>
-
-      <li onclick="hamburgerMenu()">
-        <a href="#about">About</a>
-      </li>
-
-      <li onclick="hamburgerMenu()">
-        <a href="#projects">Projects</a>
-      </li>
-
-      <li onclick="hamburgerMenu()">
-        <a href="#contact">Contact</a>
-      </li>
+      <li onclick="hamburgerMenu()"><a href="#home">Home</a></li>
+      <li onclick="hamburgerMenu()"><a href="#about">About</a></li>
+      <li onclick="hamburgerMenu()"><a href="#projects">Projects</a></li>
+      <li onclick="hamburgerMenu()"><a href="#contact">Contact</a></li>
     </ul>
   </div>
   <script>
+    let hamburger = false;
+
     function hamburgerMenu() {
-      console.log("test cleared1")
-      document.getElementById("mobile-nav").classList.toggle("open-menu")
-      console.log("test cleared2")
+      hamburger = !hamburger;
+      const mobileNav = document.getElementById("mobileNav");
+      if (hamburger) {
+        mobileNav.classList.remove("closed-menu");
+        mobileNav.classList.add("open-menu");
+      } else {
+        mobileNav.classList.remove("open-menu");
+        mobileNav.classList.add("closed-menu");
+      }
     }
   </script>
 
