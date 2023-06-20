@@ -1,457 +1,133 @@
-<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="media/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="My personal portfolio." content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="./porticon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a388be2306.js" crossorigin="anonymous" defer="defer"></script>
-  <title>Mahesh Dhingra | Front-End Developer</title>
-
-  <script src="main.js"></script>
-  <link href="style.css" rel="stylesheet">
-  <script src="script.js"></script>
-</head>
-<body>
-  <noscript>Javascript is not working....</noscript>
-  <!-- navbar -->
-  <nav>
-    <h3 class="logo" onclick="scroolok()">
-      Mahesh.dev
-    </h3>
-
-    <script>
-      function scroolok() {
-        window.scrollTo(0, 0)
-      }
-    </script>
-    <ul>
-      <li>
-        <a href="#home">Home</a>
-      </li>
-
-      <li>
-        <a href="#about">About</a>
-      </li>
-
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-
-      <li onclick="hamburgerMenu()"><i class="fa-solid fa-bars-staggered mobile-menu"></i></li>
-    </ul>
-  </nav>
-
-  <div id="mobileNav" class="mobile-nav closed-menu">
-    <span onclick="hamburgerMenu()"><i class="fa-solid fa-xmark"></i></span>
-    <ul>
-      <li onclick="hamburgerMenu()"><a href="#home">Home</a></li>
-      <li onclick="hamburgerMenu()"><a href="#about">About</a></li>
-      <li onclick="hamburgerMenu()"><a href="#projects">Projects</a></li>
-      <li onclick="hamburgerMenu()"><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-  <script>
-    let hamburger = false;
-
-    function hamburgerMenu() {
-      hamburger = !hamburger;
-      const mobileNav = document.getElementById("mobileNav");
-      if (hamburger) {
-        mobileNav.classList.remove("closed-menu");
-        mobileNav.classList.add("open-menu");
-      } else {
-        mobileNav.classList.remove("open-menu");
-        mobileNav.classList.add("closed-menu");
-      }
-    }
-  </script>
-
-  <!-- hero -->
-  <section id="home" class="hero">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-      <div class="content">
-        <div class="hero-main">
-          <div class="hero-text">
-            <h1>Front-End Developer</h1>
-            <img src="media/waving.1bae5fcfb51082b5c2b4.png" alt="waving_hand" />
-            <p>
-              Hi, I'm Mahesh a Developer. A passionate Front-End Developer based in Delhi, India. 📍
+      <!-- INTRODUCTION -->
+      <div class="intro">
+        <div class="salute">
+          <div class="saluteTextContainer">
+            <h1 class="saluteText">Hi</h1>
+          </div>
+          <div class="saluteImgContainer">
+            <img src="./img/person.png" alt="" class="saluteImg" />
+          </div>
+        </div>
+        <div class="nameContainer">
+          <h2 class="name">I'm Mahesh</h2>
+        </div>
+        <div class="jobTitleContainer dark">
+          <h2 class="jobTitle">a Web Developer</h2>
+        </div>
+        <div class="jobTitleContainer purple">
+          <h2 class="jobTitle">and Designer</h2>
+        </div>
+      </div>
+      <!-- PROJECTS -->
+      <div class="projects">
+        <h1 class="projectsTitle">Here are some of my projects</h1>
+        <div class="project">
+          <div class="phone">
+            <img src="./img/phone.png" alt="" />
+            <div class="phoneScreen">
+              <img src="./img/phoneApp.png" alt="" class="phoneApp" />
+            </div>
+          </div>
+          <div class="projectDetail">
+            <h1 class="projectTitle">Vortex</h1>
+            <p class="projectDesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              repudiandae quia natus et iste earum ab fugiat eum ipsam, illum
+              vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo
+              veritatis possimus! Accusamus repudiandae quia natus et iste earum
+              ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt
+              laudantium recusandae illo veritatis possimus! laudantium
+              recusandae illo veritatis possimus! recusandae illo veritatis.
             </p>
-            <span>
-              <a aria-label="instagram" rel="noreferrer" target="_blank"
-                href="https://www.instagram.com/mahesh.ishere/">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/MaheshTheDeveloper">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </span>
-          </div>
-
-          <div class="hero-img">
-            <img src="media/adt.jpg" alt="">
+            <button class="projectButton">Learn More</button>
           </div>
         </div>
-
-        <div class="skills">
-          <p>Tech Stack</p>
-          <div class="logos">
-            <ul>
-              <li>
-                <img src="media/html.6e7b1b463015c056aeb9a624c8dc2876.svg" title="HTML5" alt="program_img" />
-              </li>
-              <li>
-                <img src="media/css3.9cecabbf6ce67609c48bc4f280a11002.svg" title="CSS3" alt="program_img" />
-              </li>
-              <li>
-                <img src="media/javascript.de4c2594613e34b15666206bbede7327.svg" itle="Javascript" alt="program_img" />
-              </li>
-              <li>
-                <img src="media/react.afac9c43724070bf6674f2692b7356a9.svg" title="React JS" alt="program_img" />
-              </li>
-              <li>
-                <img src="media/tailwind.79614a5f61617ba49a0891494521226b.svg" title="Tailwind CSS" alt="program_img" />
-              </li>
-              <li>
-                <img src="media/scss.67cd0525916c4cdea4eb3abd8ae11137.svg" title="Sass/Scss" alt="program_img" />
-              </li>
-            </ul>
+        <div class="project">
+          <div class="laptop">
+            <img src="./img/laptop.png" alt="" />
+            <div class="laptopScreen">
+              <img src="./img/laptopApp.png" alt="" class="laptopApp" />
+            </div>
+          </div>
+          <div class="projectDetail">
+            <h1 class="projectTitle">Vortex</h1>
+            <p class="projectDesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              repudiandae quia natus et iste earum ab fugiat eum ipsam, illum
+              vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo
+              veritatis possimus! Accusamus repudiandae quia natus et iste earum
+              ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt
+              laudantium recusandae illo veritatis possimus! laudantium
+              recusandae illo veritatis possimus! recusandae illo veritatis.
+            </p>
+            <button class="projectButton">Learn More</button>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- about -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-content">
-        <div class="img-side">
-          <img src="media/working-emoji.c5325f52b5be329995a5.png" alt="emoji" class="work-emoji" />
-          <img src="media/about-img.62b47e7f183d4b4e9feb.webp" alt="mee" class="img-side__main-img" />
-          <span>
-            <img src="media/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg" alt="text" />
-          </span>
-        </div>
-        <div class="text-side">
-          <h4>About me</h4>
-          <h3>
-            A dedicated Front-End Developer <br /> based in Delhi, India
-            📍
-          </h3>
-          <p>
-            As a Junior Front-End Developer, I possess an impressive arsenal
-            of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I
-            excel in designing and maintaining responsive websites that
-            offer a smooth user experience. My expertise lies in crafting
-            dynamic, engaging interfaces through writing clean and optimized
-            code and utilizing cutting-edge development tools and
-            techniques. I am also a team player who thrives in collaborating
-            with cross-functional teams to produce outstanding web
-            applications.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- projects -->
-  <section id="projects" class="project">
-    <div class="container">
-      <div class="project-content">
-        <p>portfolio</p>
-        <h3>Each project is a unique piece of development 🧩</h3>
-        <div class="projects-grid">
-          <div class="pro pro__1 undefined">
-            <div class="pro__img"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer"><img
-                  src="media/Skateboard.png" alt="website"
-                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
-            <div class="pro__text">
-              <h3 style="font-weight: bolder;">Skateboard Dashboard</h3>
-              <p>Skateboard Dashboard is a social hub for skateboarders worldwide. Connect, share, and stay updated with
-                the global skateboarding community.</p>
-              <div class="stack">
-                <p>Html</p>
-                <p>Css</p>
-                <p>Js</p>
-              </div>
-              <div class="links"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer">Code
-                  <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="Projects/1/index.html" rel="noreferrer">Live Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-              </div>
+        <div class="project">
+          <div class="phone">
+            <img src="./img/phone.png" alt="" />
+            <div class="phoneScreen">
+              <img src="./img/phoneApp.png" alt="" class="phoneApp" />
             </div>
           </div>
-
-          <div class="pro pro__1 reversed-proj">
-            <div class="pro__img"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer"><img
-                  src="media/pf-1.png" alt="website"
-                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
-            <div class="pro__text">
-              <h3 style="font-weight: bolder;">Portfolio Website</h3>
-              <p> A portfolio website is an online platform that showcases a person's work, skills, and accomplishments.
-                It serves as a digital representation of their professional or creative portfolio.</p>
-              <div class="stack">
-                <p>Html</p>
-                <p>Css</p>
-                <p>Js</p>
-              </div>
-              <div class="links"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer">Code
-                  <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="Projects/2/index.html" rel="noreferrer">Live Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="pro pro__1 undefined">
-            <div class="pro__img"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer"><img
-                  src="media/3.png" alt="website"
-                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
-            <div class="pro__text">
-              <h3 style="font-weight: bolder;">Socially </h3>
-              <p>Sociallly is a social hub to make online friends worldwide. Connect, share, and stay updated with
-                the global app.</p>
-              <div class="stack">
-                <p>Html</p>
-                <p>Css</p>
-                <p>Js</p>
-              </div>
-              <div class="links"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer">Code
-                  <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="Projects/3/index.html" rel="noreferrer">Live Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="pro pro__1 reversed-proj">
-            <div class="pro__img"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer"><img
-                  src="media/4.png" alt="website"
-                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
-            <div class="pro__text">
-              <h3 style="font-weight: bolder;">Anon</h3>
-              <p> A ecommerce website is an online platform that showcases a bunch of products, and accomplishments. It
-                serves as a digital representation of their professional or creative website.</p>
-              <div class="stack">
-                <p>Html</p>
-                <p>Css</p>
-                <p>Js</p>
-              </div>
-              <div class="links"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer">Code
-                  <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="Projects/4/index.html" rel="noreferrer">Live Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="pro pro__1 undefined">
-            <div class="pro__img"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer"><img
-                  src="media/5.png" alt="website"
-                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
-            <div class="pro__text">
-              <h3 style="font-weight: bolder;">Craftii</h3>
-              <p>Craftii is an ecommerce website for handcrafts. They have unique hand collections, leather works &
-                more.</p>
-              <div class="stack">
-                <p>Html</p>
-                <p>Css</p>
-                <p>Js</p>
-              </div>
-              <div class="links"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer">Code
-                  <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="Projects/5/index.html" rel="noreferrer">Live Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="pro pro__1 reversed-proj">
-            <div class="pro__img"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer"><img
-                  src="media/6.png" alt="website"
-                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
-            <div class="pro__text">
-              <h3 style="font-weight: bolder;">Cryptoza</h3>
-              <p> Cryptoza is an online crypto platfrom where you buy, sell, trade and earn interest on your crypto.</p>
-              <div class="stack">
-                <p>Html</p>
-                <p>Css</p>
-                <p>Js</p>
-              </div>
-              <div class="links"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer">Code
-                  <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="Projects/6/index.html" rel="noreferrer">Live Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="pro pro__1 undefined">
-            <div class="pro__img"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer"><img
-                  src="media/7.png" alt="website"
-                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
-            <div class="pro__text">
-              <h3 style="font-weight: bolder;">Portfolio</h3>
-              <p>A portfolio website is an online platform that showcases a person's work, skills, and accomplishments.
-                It serves as a digital representation of their professional or creative portfolio.</p>
-              <div class="stack">
-                <p>Html</p>
-                <p>Css</p>
-                <p>Js</p>
-              </div>
-              <div class="links"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer">Code
-                  <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="Projects/7/index.html" rel="noreferrer">Live Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="pro pro__1 reversed-proj">
-            <div class="pro__img"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer"><img
-                  src="media/8.png" alt="website"
-                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
-            <div class="pro__text">
-              <h3 style="font-weight: bolder;">Doclab</h3>
-              <p>Doclab is an online booking platfrom where you register appointment.</p>
-              <div class="stack">
-                <p>Html</p>
-                <p>Css</p>
-                <p>Js</p>
-              </div>
-              <div class="links"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer">Code
-                  <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="Projects/8/index.html" rel="noreferrer">Live Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="pro pro__1 undefined">
-            <div class="pro__img"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer"><img
-                  src="media/9.png" alt="website"
-                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
-            <div class="pro__text">
-              <h3 style="font-weight: bolder;">Metalink</h3>
-              <p>Metalink is an online nft platfrom where you buy, sell, trade and earn interest on your nft.</p>
-              <div class="stack">
-                <p>Html</p>
-                <p>Css</p>
-                <p>Js</p>
-              </div>
-              <div class="links"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer">Code
-                  <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="Projects/9/index.html" rel="noreferrer">Live Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="pro pro__1 reversed-proj">
-            <div class="pro__img"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer"><img
-                  src="media/10.png" alt="website"
-                  style="transform: translateY(0%); transition: transform 10s ease-in-out 0s;"></a></div>
-            <div class="pro__text">
-              <h3 style="font-weight: bolder;">Volti</h3>
-              <p>Volti is an online booking platfrom where you can book your charging time and charge your ev.</p>
-              <div class="stack">
-                <p>Html</p>
-                <p>Css</p>
-                <p>Js</p>
-              </div>
-              <div class="links"><a target="_blank" href="https://github.com/MaheshTheDeveloper" rel="noreferrer">Code
-                  <i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="Projects/8/index.html" rel="noreferrer">Live Demo
-                  <i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-              </div>
-            </div>
+          <div class="projectDetail">
+            <h1 class="projectTitle">Vortex</h1>
+            <p class="projectDesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              repudiandae quia natus et iste earum ab fugiat eum ipsam, illum
+              vitae nihil quasi recusandae? Nesciunt laudantium recusandae illo
+              veritatis possimus! Accusamus repudiandae quia natus et iste earum
+              ab fugiat eum ipsam, illum vitae nihil quasi recusandae? Nesciunt
+              laudantium recusandae illo veritatis possimus! laudantium
+              recusandae illo veritatis possimus! recusandae illo veritatis.
+            </p>
+            <button class="projectButton">Learn More</button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- contact -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <div class="contact__content">
-        <div class="contact__title">
-          <p>contact</p>
-          <h3>Please do not hesitate to reach out for assistance! <span>👇</span></h3>
+      <!-- GITHUB -->
+      <div class="githubContainer">
+        <h1 class="githubTitle"><a href="https://drive.google.com/drive/folders/1Fed4JRxrimyX63q8cF1xbkT1k_Ne8HgR?usp=drive_link">Want to see all projects?</a></h1>
+        <div class="githubChart">
+          <div class="dates">
+            <span>Jan</span>
+            <span>Feb</span>
+            <span>Mar</span>
+            <span>Apr</span>
+            <span>May</span>
+            <span>Jun</span>
+            <span>Jul</span>
+            <span>Agu</span>
+            <span>Sep</span>
+            <span>Oct</span>
+            <span>Nov</span>
+            <span>Dec</span>
+          </div>
+          <div class="boxContainer"></div>
+          <h1 class="githubTitle">ON GITHUB</h1>
         </div>
-        <div class="contact__icons">
-          <div class="contact__icon-box">
-            <span>
-              <i class="fa-solid fa-map-location-dot"></i>
-            </span>
-            <div class="contact__info">
-              <h3>Location</h3>
-              <p>Delhi, India</p>
-            </div>
-          </div>
-
-          <div class="contact__icon-box">
-            <span>
-              <i class="fa-solid fa-envelope-open-text"></i>
-            </span>
-            <div class="contact__info">
-              <h3>Mail</h3>
-              <a href="mailto:maheshwebdev11@gmail.com">
-                maheshwebdev11@gmail.com
-              </a>
-            </div>
-          </div>
-          <div class="contact__icon-box">
-            <span>
-              <i class="fa-solid fa-phone"></i>
-            </span>
-            <div class="contact__info">
-              <h3>Phone</h3>
-              <a href="callto:+919650047126">
-                +91 96500 47126
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="footerc">
-        <h3>
-          Copyright © 2023. All rights are reserved
-        </h3>
-        <div class="footerc__socials">
-          <a aria-label="instagram" target="_blank" rel="noreferrer" href="https://www.instagram.com/mahesh.ishere">
-            <i class="fa-brands fa-instagram"></i>
+        <div class="githubSm">
+          <a href="">
+            <img src="./img/github.png" alt="" />
           </a>
-          <a aria-label="github" target="_blank" rel="noreferrer" href="https://github.com/MaheshTheDeveloper">
-            <i class="fa-brands fa-github"></i>
-          </a>
+          <h2>Find Me on Github</h2>
         </div>
       </div>
     </div>
-  </footer>
-
-
-</body>
-
+    <script src="./app.js"></script>
+  </body>
 </html>
