@@ -293,4 +293,7 @@ a {
     font-size: 30px;
     text-align: center;
   }
+  .name {
+    font-size: 10vw;
+  }
 }
